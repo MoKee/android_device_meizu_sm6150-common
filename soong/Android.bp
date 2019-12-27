@@ -1,0 +1,17 @@
+bootstrap_go_package {
+    name: "soong-meizu-sm6150-plugins",
+    pkgPath: "device/meizu/sm6150-common",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-cc",
+        "soong-genrule",
+    ],
+    srcs: [
+        "light.go",
+        "main.go",
+    ],
+    pluginFor: ["soong_build"],
+}
